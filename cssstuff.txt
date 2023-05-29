@@ -1,0 +1,8 @@
+#COLORS
+
+Background - #0d1116
+Purple - #8cb4ff
+Pink - #ff97a0
+Green - #00d061
+Blue - #8cb4ff
+
