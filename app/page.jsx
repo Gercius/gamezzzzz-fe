@@ -1,4 +1,4 @@
-import GameCards from "./components/game-cards/GameCards";
+import GameCards from "../components/game-cards/GameCards";
 
 async function getData() {
     try {
