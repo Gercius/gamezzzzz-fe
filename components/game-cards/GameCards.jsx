@@ -5,6 +5,9 @@ const GameCards = (props) => {
 
   return (
     <div className="text-gray-100 w-full">
+      <div className="flex justify-center">
+        <NavigatePages currentPage={props.currentPage} />
+      </div>
       <div>
         {/* Implement 30/60/90 games per page selection option */}
       </div>
@@ -17,10 +20,8 @@ const GameCards = (props) => {
           />
         ))}
       </div>
-      <div className="flex justify-center space-x-5">
-        <button>Previous</button>
-        <NavigatePages setCurrentPage={props.currentPage} />
-        <button>Next</button>
+      <div className="flex justify-center">
+        <NavigatePages currentPage={props.currentPage} />
       </div>
     </div>
   );
