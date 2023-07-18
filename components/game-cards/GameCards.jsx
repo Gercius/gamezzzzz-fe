@@ -4,7 +4,7 @@ import NavigatePages from "../NavigatePages";
 const GameCards = (props) => {
 
   return (
-    <div className="text-gray-100 w-full">
+    <div className="text-gray-100">
       <div className="flex justify-center">
         <NavigatePages currentPage={props.currentPage} />
       </div>

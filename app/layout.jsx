@@ -16,8 +16,12 @@ export default function RootLayout({ children }) {
         <body className={`${inter.className} bg-main-background`}>
           <Header />
           <div className="flex">
-            <Sidebar />
-            {children}
+            <div>
+              <Sidebar />
+            </div>
+            <div className="w-screen mx-20 min-h-screen">
+              {children}
+            </div>
           </div>
         </body>
     </html>
