@@ -15,8 +15,8 @@ const GameCards = (props) => {
         {props.data.map(game => (
           <GameCard 
             key={game.id}
-            img={game.image}
-            name={game.gameName}
+            img={game['Header image']}
+            name={game.Name}
           />
         ))}
       </div>
