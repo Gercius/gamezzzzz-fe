@@ -4,23 +4,24 @@ import NavigatePages from "../NavigatePages";
 const GameCards = (props) => {
 
   return (
-    <div className="text-gray-100">
-      <div className="flex justify-center">
+    <div className="pl-5 pr-5">
+      <div>
         <NavigatePages currentPage={props.currentPage} />
       </div>
       <div>
-        {/* Implement 30/60/90 games per page selection option */}
+        {/* Searchbar */}
       </div>
-      <div className="grid grid-cols-3">
+      <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-8 justify-items-center">
         {props.data.map(game => (
           <GameCard 
             key={game.id}
             img={game['Header image']}
             name={game.Name}
+            price={game.Price}
           />
         ))}
       </div>
-      <div className="flex justify-center">
+      <div>
         <NavigatePages currentPage={props.currentPage} />
       </div>
     </div>

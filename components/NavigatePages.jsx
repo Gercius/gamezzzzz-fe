@@ -4,7 +4,7 @@ const NavigatePages = (props) => {
   const currentPage = parseInt(props.currentPage);
 
   return (
-    <div>
+    <>
       <ul className="flex justify-center space-x-3">
         <li>
           <Link 
@@ -27,7 +27,7 @@ const NavigatePages = (props) => {
           </Link>
         </li>
       </ul>
-    </div>
+    </>
   );
 };
 export default NavigatePages;
