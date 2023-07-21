@@ -1,6 +1,6 @@
 async function getPageData(page, pageSize = 30) {
   try {
-    const res = await fetch(`http://localhost:5177/api/Games?page=${page}&pageSize=${pageSize}`);
+    const res = await fetch(`http://localhost:4000/Games?page=${page}&pageSize=${pageSize}`);
 
     if (!res.ok) {
       throw new Error('Failed to fetch data');
