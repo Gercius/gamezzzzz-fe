@@ -1,4 +1,4 @@
-import GameCard from "../game-card/GameCard";
+import GameCard from "./GameCard";
 import NavigatePages from "../NavigatePages";
 
 const GameCards = (props) => {
@@ -14,10 +14,11 @@ const GameCards = (props) => {
       <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 md:gap-6 lg:gap-8 justify-items-center">
         {props.data.map(game => (
           <GameCard 
-            key={game.id}
+            key={game._id}
             img={game['Header image']}
             name={game.Name}
             price={game.Price}
+            id={game._id}
           />
         ))}
       </div>
